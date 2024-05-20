@@ -324,7 +324,9 @@ const Background = () => {
               </defs>
             </svg>
           </div>
-          <p className="pr-5 hidden group-hover:block transition-all duration-300 ease-in">testingggg</p>
+          <p className="pr-5 hidden group-hover:block transition-all duration-300 ease-in">
+            testingggg
+          </p>
         </div>
       </div>
     </div>

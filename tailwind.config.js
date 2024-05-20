@@ -7,10 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        "c-1": "calc(100vh)",
+        "c-2": "calc(140vh)",
+        "c-3": "calc(180vh)",
+      },
+      width: {
+        "c-1": "calc(100vh)",
+        "c-2": "calc(140vh)",
+        "c-3": "calc(180vh)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "custom-gradient":
+          "linear-gradient(179.87deg, #010314 0.11%, #5329C4 27.92%, #FFFFFF 55.73%)",
       },
     },
   },

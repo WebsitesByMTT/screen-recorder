@@ -1,6 +1,6 @@
 const Button = () => {
   return (
-    <a href='/'>
+    <a href="/">
       <button className="group flex items-center gap-4 px-6 py-4 border-[1px] border-white rounded-[3rem]">
         <svg
           className="transition-transform duration-300 transform origin-center group-hover:rotate-45"

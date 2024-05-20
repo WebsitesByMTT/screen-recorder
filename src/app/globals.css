@@ -2,12 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   overflow-x: hidden;
 }
-.icon:hover svg path{
-  fill: #230346;
-}
-.icon svg path{
-  fill: #B6A4E6;
+
+.icon {
+  width: 6rem;
+  height: 6rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  background-color: #230346;
+
+  border-radius: 50%;
+  position: relative;
+  padding-left: 1.2rem;
+
+  .title {
+    color: #230346;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    white-space: nowrap;
+  }
+
+  svg {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    fill: #b6a4e6;
+  }
+
+  .title {
+    /* display: none; */
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    width: 18rem;
+    justify-content: flex-start;
+    border-radius: 0;
+    border-radius: 20rem;
+    background-color: #b6a4e6;
+
+    .title {
+      display: block;
+    }
+
+    svg {
+      fill: #230346;
+    }
+  }
 }

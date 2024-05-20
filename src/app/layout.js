@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-[#ffffff] px-10 py-8">{children}</div>
+        <div className="bg-white px-5 md:px-10 py-4 md:py-8">{children}</div>
       </body>
     </html>
   );
