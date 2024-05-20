@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Navbar from "./Navbar";
 
-const Section1 = () => {
+const Hero = () => {
   return (
     <div className="relative bg-gradient-to-b from-[#010314] via-[#5329C4] to-[#FFFFFF] rounded-tr-[1.8rem] rounded-tl-[1.8rem]">
       <Navbar />
@@ -12,7 +11,7 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default Hero;
 
 const Background = () => {
   return (
@@ -270,11 +269,11 @@ const Background = () => {
         </defs>
       </svg>
       <div className="absolute top-[50%] left-[26%] group transition-all duration-300 ease-in">
-        <div className="flex bg-[#B6A4E6] rounded-full items-center gap-5">
-          <div className="icon transition-all ease-in duration-300 p-2 bg-[#230346] rounded-full hover:bg-[#B6A4E6]">
+        <div className="flex rounded-full group-hover:bg-[#B6A4E6] items-center ">
+          <div className="icon  p-2 bg-[#230346] group-hover:bg-[#B6A4E6] rounded-full ">
             <svg
-              width="110"
-              height="109"
+              width="80"
+              height="80"
               viewBox="0 0 110 109"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -290,8 +289,8 @@ const Background = () => {
                   id="filter0_d_311_2423"
                   x="0"
                   y="0"
-                  width="110"
-                  height="108.421"
+                  width="90"
+                  height="84"
                   filterUnits="userSpaceOnUse"
                   color-interpolation-filters="sRGB"
                 >
@@ -324,7 +323,7 @@ const Background = () => {
               </defs>
             </svg>
           </div>
-          <p className="pr-5 hidden group-hover:block transition-all duration-300 ease-in">testingggg</p>
+          <p className="pr-3 pl-2 hidden group-hover:block transition-all font-semibold text-[1.3rem] duration-300 ease-in">Record Screen</p>
         </div>
       </div>
     </div>
