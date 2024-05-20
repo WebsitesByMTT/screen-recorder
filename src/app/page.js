@@ -1,14 +1,10 @@
-import Section1 from "./components/Section1";
+import Hero from "../components/Hero";
 
 export default function Home() {
-  const data={
-    section1:{
-      
-    }
-  }
+ 
   return (
     <main>
-      <Section1/>
+      <Hero/>
     </main>
   );
 }
