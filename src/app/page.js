@@ -1,3 +1,14 @@
+import Section1 from "./components/Section1";
+
 export default function Home() {
-  return <main>Sreen Recorder</main>;
+  const data={
+    section1:{
+      
+    }
+  }
+  return (
+    <main>
+      <Section1/>
+    </main>
+  );
 }

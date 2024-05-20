@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  overflow-x: hidden;
+}
+.icon:hover svg path{
+  fill: #230346;
+}
+.icon svg path{
+  fill: #B6A4E6;
+}
