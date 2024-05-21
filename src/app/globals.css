@@ -30,7 +30,7 @@
 
 .card {
   position: sticky;
-  top: 0;
+  top: 20%;
   padding-top: calc(var(--index) * var(--card-top-offset));
 }
 
@@ -73,9 +73,7 @@
   }
 }
 
-.outer {
-  margin: 50px;
-}
+
 
 .button {
   display: flex;
@@ -84,12 +82,12 @@
 
 .text:hover {
   background-position: left bottom;
-  color: #65AF0D;
+  color: #5AA808;
 }
 
 .text {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 30px; 
   color: white;
   transition: all .6s ease-out;
@@ -98,8 +96,15 @@
   border: 1px solid gray;
   border-radius: 5rem;
   padding: 1.5rem 2rem;
-  background: linear-gradient(to right,white 50%, #65AF0D  50%);
+  background: linear-gradient(to right,#ebf7da 50%, #5AA808  50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .5s ease-out;
+}
+
+@media (max-width:768px) {
+  .text{
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+  }
 }
