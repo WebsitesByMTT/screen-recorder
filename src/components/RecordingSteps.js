@@ -126,13 +126,12 @@ const RecordingSteps = () => {
     ]
 
     return (
-        <div className='pb-12 md:pb-20 bg-white'>
+        <div className='bg-white px-5 py-5 lg:py-10 lg:px-14 '>
             <div>
-                <div className='text-black text-[2rem] md:text-[3rem] pb-3 md:pb-16 text-center'>How to screen record</div>
-            </div>
+                <h2 className='text-black text-[2rem] md:text-[3rem] pb-3 md:pb-16 text-center'>How to screen record</h2>
             {
                 data.map((item, ind) => (
-                    <div className='w-full md:w-[70%] grid grid-cols-12 py-4 md:py-6 mx-auto'>
+                    <div className='w-full md:w-[70%] grid grid-cols-12 py-4 md:py-6 mx-auto' key={ind}>
                         <div key={ind} className={`col-span-12 md:col-span-7 ${ind % 2 === 1 ? 'md:order-2' : 'md:order-1'}`}>
                             <div className={`md:flex md:space-x-10  justify-between ${ind % 2 === 1 ? 'md:flex-row-reverse' : ''}  items-center`}>
                                 <div className='w-[55%] md:w-[35%] justify-between  px-4 py-2 rounded-full flex items-center text-white bg-[#B6A4E6]'>
@@ -151,6 +150,7 @@ const RecordingSteps = () => {
 
                 ))
             }
+            </div>
         </div>
     );
 };

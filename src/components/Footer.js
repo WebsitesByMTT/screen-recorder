@@ -13,11 +13,11 @@ const Footer = () => {
                 },
                 {
                     text: 'Game Recorder',
-                    Link: '#'
+                    Link: '/game-recorder'
                 },
                 {
                     text: 'Webcam Recorder',
-                    Link: '#'
+                    Link: '/webcam-recorder'
                 },
                 {
                     text: 'Screen Blur',
