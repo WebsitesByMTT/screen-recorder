@@ -4,33 +4,11 @@ import Navbar from "./Navbar";
 import Autoplay from "embla-carousel-autoplay";
 
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import Image from "next/image";
 
-const data = [
-  {
-    id: 1,
-    title: `<span>Record Your Screen  <br className="hidden lg:block" /> Like A Pro</span>`,
-    desc: "Capture everything that you want to record from your screen",
-  },
-  {
-    id: 2,
-    title: `<span>Record Games In <br className="hidden lg:block" /> High Quality </span>`,
-    desc: "Record while playing the game in high quality and upload it on your channel.",
-  },
-  {
-    id: 3,
-    title: `<span>Record Webcam <br className="hidden lg:block" />  Video </span>`,
-    desc: "Record any webcam video professionally from any video device including USB webcam cameras, video capture cards, and many more.",
-  },
-  {
-    id: 4,
-    title: `<span>Blur Your Screen</span>`,
-    desc: "Hide your sensitive details on your browser before or during the screen recording.",
-  },
-];
-
-const Hero = () => {
-  return (
-    <>
+const Hero = ({ type, homeData, data }) => {
+  if (type === "home") {
+    return (
       <div
         className="rounded-tl-3xl rounded-tr-3xl bg-custom-gradient h-screen overflow-hidden relative"
         style={{
@@ -64,7 +42,7 @@ const Hero = () => {
                   className=" w-[80vw] md:w-auto"
                 >
                   <CarouselContent>
-                    {data.map((item) => (
+                    {homeData.map((item) => (
                       <CarouselItem key={item.id}>
                         <h2
                           className=" text-white caption-top text-4xl lg:text-6xl font-[300] text-center "
@@ -89,7 +67,7 @@ const Hero = () => {
                   className=" w-[70vw] md:w-full"
                 >
                   <CarouselContent className=" h-28 lg:h-24">
-                    {data.map((item) => (
+                    {homeData.map((item) => (
                       <CarouselItem key={item.id}>
                         <p className=" text-white text-base lg:text-xl text-center">
                           {item.desc}
@@ -376,7 +354,48 @@ const Hero = () => {
           }}
         ></div>
       </div>
-    </>
+    );
+  }
+  return (
+    <div
+      className="rounded-tl-3xl rounded-tr-3xl bg-custom-gradient lg:h-screen overflow-hidden relative"
+      style={{
+        background:
+          "linear-gradient(180deg, #010314 0.11%, #5329C4 27.92%, #FFF 55.73%)",
+      }}
+    >
+      <Navbar />
+      <div className=" h-full relative mt-32 grid grid-cols-1 md:grid-cols-2 p-5 lg:px-14 gap-6">
+        <div className="flex flex-col gap-4 items-center md:items-start justify-center ">
+          <h1 className=" text-5xl md:text-6xl text-center md:text-left">
+            {data?.title}
+          </h1>
+          {data?.desc &&
+            data?.desc.map((item, idx) => (
+              <p
+                className=" text-base line-clamp-2 text-center md:text-left"
+                key={idx}
+              >
+                {item}
+              </p>
+            ))}
+
+          {data?.button && (
+            <button className=" py-3 px-8 bg-black rounded-[59px] text-white text-center md:text-left">
+              {data?.button}
+            </button>
+          )}
+        </div>
+        <div className="flex items-center justify-center ">
+          <Image
+            src={data?.image}
+            alt="screen-recorder"
+            width={1000}
+            height={1000}
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 
