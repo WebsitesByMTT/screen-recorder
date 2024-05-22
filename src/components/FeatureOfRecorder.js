@@ -31,13 +31,13 @@ const FeatureOfRecorder = () => {
             <div className='w-[95%] md:w-[80%] mx-auto'>
                 <div>
                     <ul id="cards">
-                <div className='text-[1.5rem] sticky top-[2%] text-center md:text-[3rem]'>Features Of Free And Secure Screen <br className='md:block hidden' /> Recorder</div>
+                        <div className='text-[1.5rem] sticky top-[2%] text-center md:text-[3rem]'>Features Of Free And Secure Screen <br className='md:block hidden' /> Recorder</div>
 
                         {
                             data.map((item, ind) => (
-                                <li key={ind} class="relative card bg-gradient-to-t rounded-[2rem] mt-10 from-[#5F38C8] to-[#F3F0FC]  w-full md:w-[60%] mx-auto" id="card-1">
-                                    <Image src="/hero/feature_line.png" alt='img' height={100} width={100} className='w-[100%] h-full' />
-                                    <div className='absolute top-[50%] text-white left-6 md:left-[10%] translate-y-[-50%]'>
+                                <li key={ind} class="relative card bg-gradient-to-t rounded-[2rem]  from-[#5F38C8] to-[#F3F0FC]  w-full h-auto md:w-[60%] mx-auto" id="card-1">
+                                    <Image src="/hero/feature_line.svg" alt='img' height={100} width={100} className='absolute w-auto right-0 max-w-none top-0 h-full' />
+                                    <div className='py-20 pl-10 text-white'>
                                         <div className='text-[1.7rem] md:text-[2.5rem] md:w-[70%]'>{item.heading}</div>
                                         <div className='pt-5 w-full md:w-[60%]'>{item.para}</div>
                                     </div>
@@ -47,8 +47,8 @@ const FeatureOfRecorder = () => {
 
                     </ul>
                     <div>
-                        <div class="button">
-                            <button class="text">
+                        <div className="parant">
+                            <button className="text">
                                 <svg
                                     className="transition-transform mr-5 hover:scale-50 duration-300 transform origin-center group-hover:rotate-45"
                                     height="40"
@@ -339,6 +339,7 @@ const FeatureOfRecorder = () => {
                                 </svg>
                                 <span>Add to Chrome it's free</span></button>
                         </div>
+
                     </div>
                 </div>
 

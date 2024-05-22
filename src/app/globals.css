@@ -31,7 +31,6 @@
 .card {
   position: sticky;
   top: 20%;
-  padding-top: calc(var(--index) * var(--card-top-offset));
 }
 
 /* Animation */
@@ -67,17 +66,13 @@
   }
 }
 
-@media (max-width:768px) {
-  :root {
-    --card-height: 100vw;
-  }
-}
 
 
 
-.button {
+.parant {
   display: flex;
   justify-content:center ; 
+  padding-top: 1rem;
 }
 
 .text:hover {
@@ -108,3 +103,40 @@
     padding: .5rem 1rem;
   }
 }
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+  background-color: transparent;
+}
+
+.slider .slide-track {
+  animation: scroll 10s linear infinite;
+  display: flex;
+  align-items: center;
+  width: calc(250px * 14);
+}
+
+@media screen and(max-width: 600px) {
+  .slider .slide-track {
+    width: calc(10% * 14);
+  }
+}
+
+
+

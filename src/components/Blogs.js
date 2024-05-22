@@ -20,12 +20,12 @@ const Blogs = () => {
     return (
         <div className='bg-white pb-12 md:pb-20'>
             <div className='w-[95%] md:w-[80%] mx-auto'>
-                <div className='text-black text-center text-[3rem]'>Blogs</div>
+                <div className='text-black text-center text-[2rem] md:text-[3rem]'>Blogs</div>
                 <div className='grid grid-cols-12 space-y-4 md:space-y-0 md:gap-x-10 pt-10'>
                     {
                         data?.map((item, ind) => (
                             <div key={ind} className='bg-gradient-to-t rounded-3xl p-[1px] from-[#5329C4] to-[#B6A4E6] col-span-12 md:col-span-4'>
-                                <div className='bg-white px-6 md:px-10 py-8 md:py-12 rounded-3xl'>
+                                <div className='bg-white px-3 md:px-10 py-8 md:py-12 rounded-3xl'>
                                     <div className='flex justify-center pb-6'>
                                         <span className='inline-block w-[60%] h-[5px] bg-[#B6A4E6]'></span>
                                     </div>
