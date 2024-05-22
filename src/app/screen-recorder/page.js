@@ -1,9 +1,11 @@
 import Blogs from "@/components/Blogs";
+import CaptureAnyThing from '@/components/CaptureAnyThing'
 import Faq from "@/components/Faq";
 import FreeScreenRecorder from "@/components/FreeScreenRecorder";
 import Hero from "@/components/Hero";
 import WaysForRecording from "@/components/WaysForRecording";
-import React from "react";
+import OurUsers from '@/components/OurUsers'
+
 
 const data = {
   hero: {
@@ -35,7 +37,10 @@ const page = () => {
   return (
     <>
       <Hero type="" data={data.hero} />
+      <CaptureAnyThing />
+      <OurUsers />
       <FreeScreenRecorder />
+    
       <WaysForRecording data={data.WaysForRecording} />
       <Blogs />
       <Faq />
