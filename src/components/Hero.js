@@ -3,13 +3,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Autoplay from "embla-carousel-autoplay";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 
 const data = [
   {
