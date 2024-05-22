@@ -1,13 +1,26 @@
+import Counts from "@/components/Counts";
+import HomeVideo from "@/components/HomeVideo";
+import FeatureOfRecorder from "@/components/FeatureOfRecorder";
+import BestScreen from "@/components/BestScreen";
+import GraphicsFeature from "@/components/GraphicsFeature";
+import RecordingSteps from "@/components/RecordingSteps";
+import Blogs from "@/components/Blogs";
+import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
-import Section1 from "../components/Section1";
 
 export default function Home() {
-  const data = {
-    section1: {},
-  };
+
   return (
     <main>
-      <Hero />
+      <Hero/>
+      <Counts/>
+      <HomeVideo/>
+      <FeatureOfRecorder />
+      <BestScreen />
+      <GraphicsFeature />
+      <RecordingSteps/>
+      <Blogs />
+      <Faq />
     </main>
   );
 }
