@@ -52,7 +52,7 @@ const Footer = () => {
     ]
     return (
         <div className='bg-white '>
-            <div className='w-[98%] mx-auto'>
+            <div>
                 <div className='py-14'>
                     <div className='text-[2rem] md:text-[3rem] text-[#1D1D1D]  mx-auto md:w-[50%] text-center font-normal'>50K people use our screen recording software</div>
                     <div className='w-full'>
@@ -75,7 +75,7 @@ const Footer = () => {
                     <div className='text-center pt-5'>Chrome Button</div>
 
                 </div>
-                <div className='md:p-8'>
+                <div>
                     <div className='p-4 md:rounded-3xl bg-gradient-to-b from-[#F3F0FC] to-[#5329C4]'>
                         <div className='grid space-y-6 py-5 md:py-0 grid-cols-12'>
                             <div className='col-span-12 md:pl-20 md:col-span-6'>

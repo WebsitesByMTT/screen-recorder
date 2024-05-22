@@ -28,7 +28,7 @@ const FeatureOfRecorder = () => {
 
     return (
         <div className='bg-white pb-20'>
-            <div className='w-[95%] md:w-[80%] mx-auto'>
+            <div>
                 <div>
                     <ul id="cards">
                         <div className='text-[1.5rem] sticky top-[2%] text-center md:text-[3rem]'>Features Of Free And Secure Screen <br className='md:block hidden' /> Recorder</div>
@@ -37,7 +37,7 @@ const FeatureOfRecorder = () => {
                             data.map((item, ind) => (
                                 <li key={ind} class="relative card bg-gradient-to-t rounded-[2rem]  from-[#5F38C8] to-[#F3F0FC]  w-full h-auto md:w-[60%] mx-auto" id="card-1">
                                     <Image src="/hero/feature_line.svg" alt='img' height={100} width={100} className='absolute w-auto right-0 max-w-none top-0 h-full' />
-                                    <div className='py-20 pl-10 text-white'>
+                                    <div className='py-20 pl-5 md:pl-10 text-white'>
                                         <div className='text-[1.7rem] md:text-[2.5rem] md:w-[70%]'>{item.heading}</div>
                                         <div className='pt-5 w-full md:w-[60%]'>{item.para}</div>
                                     </div>
@@ -50,7 +50,7 @@ const FeatureOfRecorder = () => {
                         <div className="parant">
                             <button className="text">
                                 <svg
-                                    className="transition-transform mr-5 hover:scale-50 duration-300 transform origin-center group-hover:rotate-45"
+                                    className="transition-transform mr-5 hover:scale-50 duration-300 transform origin-center rounded-full group-hover:rotate-45"
                                     height="40"
                                     width="39"
                                     viewBox="0 0 30 31"
