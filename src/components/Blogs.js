@@ -19,7 +19,7 @@ const Blogs = () => {
 
     return (
         <div className='bg-white pb-12 md:pb-20'>
-            <div className='w-[95%] md:w-[80%] mx-auto'>
+            <div>
                 <div className='text-black text-center text-[2rem] md:text-[3rem]'>Blogs</div>
                 <div className='grid grid-cols-12 space-y-4 md:space-y-0 md:gap-x-10 pt-10'>
                     {

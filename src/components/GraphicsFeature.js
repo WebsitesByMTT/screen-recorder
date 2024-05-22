@@ -28,7 +28,7 @@ const GraphicsFeature = () => {
 
   return (
     <div className='bg-white pb-10 md:pb-20'>
-      <div className='grid grid-cols-12 space-y-5 md:space-y-0 md:gap-10 w-[95%] md:w-[80%] mx-auto'>
+      <div className='grid grid-cols-12 space-y-5 md:space-y-0 md:gap-10  mx-auto'>
         {
           data.map((item, ind) => (
             <div key={ind} className='col-span-12 md:col-span-6'>
