@@ -6,9 +6,9 @@ const WaysForRecording = ({ data }) => {
     <div className="bg-white px-5 py-5 lg:py-10 lg:px-14 ">
       <div className="">
         <h2 className="text-center text-black text-[2rem] md:text-[3rem] md:pb-10">
-          Ways For Screen Recording
+          {data.heading}
         </h2>
-        {data.map((item, ind) => (
+        {data.text.map((item, ind) => (
           <div
             key={ind}
             className="grid grid-cols-12 space-y-12 gap-[5vw] items-center"
