@@ -24,8 +24,8 @@ const Blogs = () => {
                 <div className='grid grid-cols-12 space-y-4 items-center lg:space-y-0 md:gap-x-10 pt-10'>
                     {
                         data?.map((item, ind) => (
-                            <div key={ind} className='bg-gradient-to-t rounded-3xl p-[1px] from-[#5329C4] to-[#B6A4E6] col-span-12 md:col-span-6 lg:col-span-4'>
-                                <div className='bg-white px-3 md:px-10 py-8 md:py-12 rounded-3xl'>
+                            <div key={ind} className='bg-gradient-to-t hover:scale-95 transition-all cursor-pointer rounded-3xl p-[1px] from-[#5329C4] to-[#B6A4E6] col-span-12 md:col-span-6 lg:col-span-4'>
+                                <div className='bg-white px-3 md:px-10 py-8 md:py-12  rounded-3xl'>
                                     <div className='flex justify-center pb-6'>
                                         <span className='inline-block w-[60%] h-[5px] bg-[#B6A4E6]'></span>
                                     </div>

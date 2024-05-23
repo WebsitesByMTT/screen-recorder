@@ -48,7 +48,7 @@ const FeatureOfRecorder = () => {
                     </ul>
                     <div>
                         <div className="parant">
-                            <button className="text">
+                            <a href='https://chromewebstore.google.com/detail/screen-recorder/hnpejnkkepgblnblidhfklgclddbnoaa' className="text">
                                 <svg
                                     className="transition-transform mr-5 hover:scale-50 duration-300 transform origin-center rounded-full group-hover:rotate-45"
                                     height="40"
@@ -337,7 +337,7 @@ const FeatureOfRecorder = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <span>Add to Chrome it&apos;s free</span></button>
+                                <span>Add to Chrome it&apos;s free</span></a>
                         </div>
 
                     </div>

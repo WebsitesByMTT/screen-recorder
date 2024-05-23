@@ -2,6 +2,27 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React from 'react'
 
+
+
+export const metadata = {
+    title: "About us - Recordbro",
+    description: "A free and secure screen recorder is continuously connecting people worldwide. To learn more about us, then you can visit our company page.",
+    icons: {
+      icon: '/favicon.png',
+    },
+    keywords: "Free and Secure screen recorder, best recording software, online video recorder, screen record with audio, free screen recording software, screen recording on Chrome, game recording software, Real-time Draw Tool, Real-Time Blur Display, Download 4K UHD Video Quality, Webcam Recorder, free screen recorder, free screen recorder Chrome, how to screen record on Chrome, screen recorder free download, Chrome screen recorder with audio, free Game recording software, best game recording software, how to Game record on Chrome, Game screen recorder free download, record gameplay with audio, record gameplay, Free Webcam Recorder, webcam recording software, free webcam recording software, online video recorder, Capture HD Quality Video",
+    openGraph: {
+      title: "About - Recordbro",
+      description:"A free and secure screen recorder is continuously connecting people worldwide. To learn more about us, then you can visit our company page.",
+      type: 'website',
+      siteName: "Screen Recorder",
+      images: "/favicon.png",
+    },
+    alternates: {
+      canonical: "/",
+    },
+  };
+
 const page = () => {
     return (
         <>

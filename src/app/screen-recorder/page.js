@@ -86,6 +86,25 @@ const data = {
 ]
 };
 
+export const metadata = {
+  title: "This is the free screen recorder where you can capture your screen.",
+  description: "This Free Screen Recorder extension is the best extension where you can record your screen and the best part is you can blur your screen before recording.",
+  icons: {
+    icon: '/favicon.png',
+  },
+  keywords: "Free and Secure screen recorder, best recording software, online video recorder, screen record with audio, free screen recording software, screen recording on Chrome, game recording software, Real-time Draw Tool, Real-Time Blur Display, Download 4K UHD Video Quality, Webcam Recorder, free screen recorder, free screen recorder Chrome, how to screen record on Chrome, screen recorder free download, Chrome screen recorder with audio, free Game recording software, best game recording software, how to Game record on Chrome, Game screen recorder free download, record gameplay with audio, record gameplay, Free Webcam Recorder, webcam recording software, free webcam recording software, online video recorder, Capture HD Quality Video",
+  openGraph: {
+    title: "This is the free screen recorder where you can capture your screen.",
+    description: "This Free Screen Recorder extension is the best extension where you can record your screen and the best part is you can blur your screen before recording.",
+    type: 'website',
+    siteName: "Screen Recorder",
+    images: "/favicon.png",
+  },
+  alternates: {
+    canonical: "/",
+  },
+};
+
 const page = () => {
   return (
     <>
