@@ -13,8 +13,8 @@ const Faq = ({faq}) => {
                         faq?.map((item, ind) => (
                             <div key={ind} className={`p-[1px] bg-gradient-to-t  rounded-2xl ${item.mdcols} col-span-12 h-[100%] from-[#5329C4] to-[#B6A4E6]   border`}>
                                 <div className='bg-[#F5F1FF]  rounded-2xl px-3 md:px-5 py-8 h-full'>
-                                    <div className='text-[1.8rem] '>{item.ques}</div>
-                                    <div className='text-[#230346] text-[1rem] pt-3'>{item.Ans}</div>
+                                    <h6 className='text-[1.8rem] '>{item.ques}</h6>
+                                    <p className='text-[#230346] text-[1rem] pt-3'>{item.Ans}</p>
                                 </div>
                             </div>
                         ))

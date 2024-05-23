@@ -8,27 +8,7 @@ import {
 } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-const OurUsers = () => {
-
-    const data = [
-        {
-            heading: 'Carter',
-            para: 'Free screen recorder is a very useful extension as with this I can record my screen anytime anywhere.'
-        },
-        {
-            heading: 'Carter',
-            para: 'Free screen recorder is a very useful extension as with this I can record my screen anytime anywhere.'
-        },
-        {
-            heading: 'Carter',
-            para: 'Free screen recorder is a very useful extension as with this I can record my screen anytime anywhere.'
-        },
-        {
-            heading: 'Carter',
-            para: 'Free screen recorder is a very useful extension as with this I can record my screen anytime anywhere.'
-        }
-    ]
-
+const OurUsers = ({data}) => {
     return (
         <div className='bg-white py-10 md:py-20'>
             <div className='grid grid-cols-12 items-center  md:w-[90%] mx-auto p-5 md:p-20 rounded-2xl bg-[#F0EBFA]'>
@@ -47,17 +27,17 @@ const OurUsers = () => {
                             }}
                             plugins={[
                                 Autoplay({
-                                    delay: 2000,
+                                    delay: 4000,
                                 }),
                             ]}
                         >
                             <CarouselContent>
                                 {
-                                    data.map((item, ind) => (
+                                    data?.map((item, ind) => (
                                         <CarouselItem key={ind}>
                                             <div>
-                                                <div className='text-white text-[1.5rem] md:text-[2rem]'>{item.heading}</div>
-                                                <div className='text-white text-[.9rem] md:text-[1.1rem] pt-2'>{item.para}</div>
+                                                <h6 className='text-white text-[1.5rem] md:text-[2rem]'>{item.heading}</h6>
+                                                <p className='text-white text-[.9rem] md:text-[1.1rem] pt-2'>{item.para}</p>
                                             </div>
                                         </CarouselItem>
                                     ))

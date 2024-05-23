@@ -11,7 +11,7 @@ const TryFree = ({data}) => {
           {data.text}
         </p>
 
-        <p className="m-auto text-xl p-5 py-3 text-white font-light capitalize bg-black w-fit rounded-[2rem] mt-5">{data.subtext}</p>
+        {data.subtext&&<p className="m-auto text-xl p-5 py-3 text-white font-light capitalize bg-black w-fit rounded-[2rem] mt-5">{data.subtext}</p>}
       </div>
     </div>
   );

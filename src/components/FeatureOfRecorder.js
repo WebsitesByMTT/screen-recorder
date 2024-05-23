@@ -38,8 +38,8 @@ const FeatureOfRecorder = () => {
                                 <li key={ind} class="relative card bg-gradient-to-t rounded-[2rem]  from-[#5F38C8] to-[#F3F0FC]  w-full h-auto md:w-[60%] mx-auto" id="card-1">
                                     <Image src="/hero/feature_line.svg" alt='img' height={100} width={100} className='absolute w-auto right-0 max-w-none top-0 h-full' />
                                     <div className='py-20 pl-5 md:pl-10 text-white'>
-                                        <div className='text-[1.7rem] md:text-[2.5rem] md:w-[70%]'>{item.heading}</div>
-                                        <div className='pt-5 w-full md:w-[60%]'>{item.para}</div>
+                                        <h6 className='text-[1.7rem] md:text-[2.5rem] md:w-[70%]'>{item.heading}</h6>
+                                        <p className='pt-5 w-full md:w-[60%]'>{item.para}</p>
                                     </div>
                                 </li>
                             ))

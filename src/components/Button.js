@@ -1,7 +1,7 @@
-const Button = () => {
+const Button = ({style}) => {
   return (
     <a href="/">
-      <button className=" group flex items-center gap-4 px-6 py-4 border-[1px] border-white rounded-[3rem]">
+      <button className={`group flex items-center gap-4 px-6 py-4 ${style?style:'border-white'} border-[1px]  rounded-[3rem]`}>
         <svg
           className="transition-transform duration-300 transform origin-center group-hover:rotate-45"
           height="31"
