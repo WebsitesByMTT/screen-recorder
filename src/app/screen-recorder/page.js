@@ -34,6 +34,7 @@ const data = {
       image: "/screen_recorder/waysimg3.svg",
     },
   ],
+},
  faq : [
     {
         ques: 'How can I record audio?',
@@ -47,12 +48,12 @@ const data = {
     },
     {
         ques: 'Can I trim off my recorded video?',
-        Ans: 'Yes, in case you don’t want a particular part then you can trim it from your recorded video and save it.',
+        Ans: 'Yes, in case you dont want a particular part then you can trim it from your recorded video and save it.',
         mdcols: 'md:col-span-6',
     },
     {
         ques: 'Can I take a screenshot while recording a screen?',
-        Ans: 'If you don’t want to capture the entire screen, then you can take a screenshot of a particular area.',
+        Ans: 'If you dont want to capture the entire screen, then you can take a screenshot of a particular area.',
         mdcols: 'md:col-span-8',
     },
     {
@@ -60,8 +61,29 @@ const data = {
         Ans: 'Visit its official website and install it on your browser and then you can select the option of a screen record and start recording.',
         mdcols: 'md:col-span-4',
     }
-  ]
-  ]},
+  ],
+ ourusers : [
+    {
+        heading: 'Carter',
+        para: 'Free screen recorder is a very useful extension as with this I can record my screen anytime anywhere.'
+    },
+    {
+        heading: 'Adison',
+        para: 'This extension helped me a lot both professionally and personally.'
+    },
+    {
+        heading: 'Phillip Saris',
+        para: 'It is very easy to record screens with this screen.'
+    },
+    {
+        heading: 'Tiana Culhane',
+        para: 'Now I can share all my edited videos with my friends and upload them only YouTube channel.'
+    },
+    {
+      heading: 'Randy Franci',
+      para: 'It is best for tutorial videos as you can draw anything while recording your screen.'
+  }
+]
 };
 
 const page = () => {
@@ -70,8 +92,7 @@ const page = () => {
       <Hero type="" data={data.hero} />
       <FreeScreenRecorder />
       <CaptureAnyThing />
-      <OurUsers />
-      <FreeScreenRecorder />
+      <OurUsers data={data.ourusers}/>
       <WaysForRecording data={data.WaysForRecording} />
       <Blogs />
       <Faq faq={data.faq}/>

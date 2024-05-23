@@ -17,23 +17,26 @@ const data = {
     button: "Try this Extension for free!",
     image: "/webcam-recorder-img.png",
   },
-  WaysForRecording: [
-    {
-      title: "Record Webcam videos on your screen",
-      desc: "Record live webcam videos with a high quality by using this free webcam recorder.",
-      image: "/record-webcam-videos.png",
-    },
-    {
-      title: "You can also use your phone as a webcam on your Desktop",
-      desc: "Record your videos by using your smartphone camera on your computer.",
-      image: "/use-your-phone-as-webcam.png",
-    },
-    {
-      title: "Capture your smartphone screen on your desktop",
-      desc: "Record high-quality video of your smartphone screen by using this free webcam recorder.",
-      image: "/capture-smartphone.png",
-    },
-  ],
+  WaysForRecording: {
+    heading: "How to use a Free Webcam recorder",
+    text:[
+      {
+        title: "Record Webcam videos on your screen",
+        desc: "Record live webcam videos with a high quality by using this free webcam recorder.",
+        image: "/record-webcam-videos.png",
+      },
+      {
+        title: "You can also use your phone as a webcam on your Desktop",
+        desc: "Record your videos by using your smartphone camera on your computer.",
+        image: "/use-your-phone-as-webcam.png",
+      },
+      {
+        title: "Capture your smartphone screen on your desktop",
+        desc: "Record high-quality video of your smartphone screen by using this free webcam recorder.",
+        image: "/capture-smartphone.png",
+      },
+    ],
+  },
   RecordingStepsdata: [
     {
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
@@ -152,32 +155,34 @@ const data = {
       </svg>
     }
   ],
-  footerText: 'More than thousands of people rely on our free webcam recorder'
-  WaysForRecording: {
-    heading: "How to use a Free Webcam recorder",
-    text: [
-      {
-        title: "Record Webcam videos on your screen",
-        desc: "Record live webcam videos with a high quality by using this free webcam recorder.",
-        image: "/record-webcam-videos.png",
-      },
-      {
-        title: "You can also use your phone as a webcam on your Desktop",
-        desc: "Record your videos by using your smartphone camera on your computer.",
-        image: "/use-your-phone-as-webcam.png",
-      },
-      {
-        title: "Capture your smartphone screen on your desktop",
-        desc: "Record high-quality video of your smartphone screen by using this free webcam recorder.",
-        image: "/capture-smartphone.png",
-      },
-    ],
-  },
+  footerText: 'More than thousands of people rely on our free webcam recorder',
   typeFree: {
     heading:
       "Try this free webcam recorder and capture videos by using a webcam",
     text: "It is a top-notch software from which you can capture videos using many devices, including USB webcams and camcorders. You can even record a webcam with your audio and save or upload it on your personal channel. You can set automatic stopping points and save them in various formats like MP4, AVI, and WAV. Moreover, it ensures fast recording speed, high-quality video, and efficient compression.",
   },
+  ourusers : [
+    {
+        heading: 'Giana',
+        para: 'You can customize your video with this free webcam recorder.'
+    },
+    {
+        heading: 'Ann',
+        para: 'Now you can save it in any format. Picture yourself with a webcam recorder.'
+    },
+    {
+        heading: 'Franci',
+        para: 'It is a great software and easy to use.'
+    },
+    {
+        heading: 'Allison Philips',
+        para: 'Capture HD-quality video with this free webcam recorder.'
+    },
+    {
+      heading: 'Ekstrom Bothman',
+      para: 'The best part is it does not slow your computer speed while recording.'
+  }
+]
 };
 
 const WebcamRecorder = () => {
@@ -187,7 +192,7 @@ const WebcamRecorder = () => {
       <TryFree data={data.typeFree} />
       <WaysForRecording data={data.WaysForRecording} />
       <RecordingSteps data={data.RecordingStepsdata} />
-      <OurUsers />
+      <OurUsers data={data.ourusers}/>
       <Blogs />
       <Footer FooterText={data.footerText} />
     </>

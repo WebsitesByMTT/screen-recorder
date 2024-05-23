@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Button from './Button'
 
-const Footer = ({FooterText}) => {
+const Footer = ({ FooterText }) => {
     const renderStars = [1, 2, 3, 4, 5]
     const data = [
         {
@@ -21,17 +22,17 @@ const Footer = ({FooterText}) => {
                 },
                 {
                     text: 'Screen Blur',
-                    Link: '#'
+                    Link: '/'
                 },
                 {
                     text: 'Real-Time Drawing',
-                    Link: '#'
+                    Link: '/'
                 }
             ],
             resources: [
                 {
                     text: 'Blogs',
-                    Link: '#'
+                    Link: '/blogs'
                 }
             ],
             Company: [
@@ -54,11 +55,11 @@ const Footer = ({FooterText}) => {
         <div className='bg-white '>
             <div>
                 <div className='py-14'>
-                    <div className='text-[2rem] md:text-[3rem] text-[#1D1D1D]  mx-auto lg:w-[60%] text-center font-normal '>{FooterText?FooterText:'Over 50K people use our screen recording software.'}</div>
+                    <div className='text-[2rem] md:text-[3rem] text-[#1D1D1D]  mx-auto lg:w-[60%] text-center font-normal '>{FooterText ? FooterText : 'Over 50K people use our screen recording software.'}</div>
                     <div className='w-full'>
                         <div className='flex items-center space-x-1 justify-center pt-5'>
                             {
-                                renderStars?.map((item,index) => (
+                                renderStars?.map((item, index) => (
                                     <svg key={index} xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 46 45" fill="none">
                                         <path d="M20.1856 4.94024C21.0503 2.35325 24.8061 2.35325 25.668 4.94024L28.7522 14.1871C28.9406 14.7503 29.3069 15.241 29.7987 15.5891C30.2905 15.9371 30.8826 16.1248 31.4905 16.1253H41.4695C44.2625 16.1253 45.4213 19.6083 43.1643 21.2094L35.0935 26.9226C34.6007 27.271 34.2338 27.7625 34.0453 28.3267C33.8568 28.8908 33.8564 29.4986 34.0443 30.063L37.1285 39.3099C37.9932 41.8969 34.9523 44.0513 32.6896 42.4502L24.6188 36.7369C24.1264 36.3886 23.5337 36.2011 22.9253 36.2011C22.317 36.2011 21.7242 36.3886 21.2319 36.7369L13.1611 42.4502C10.9013 44.0513 7.86317 41.8969 8.72501 39.3099L11.8092 30.063C11.9971 29.4986 11.9967 28.8908 11.8083 28.3267C11.6198 27.7625 11.2528 27.271 10.76 26.9226L2.69208 21.2122C0.435137 19.6111 1.59676 16.1281 4.38695 16.1281H14.3631C14.9714 16.1282 15.5642 15.9408 16.0566 15.5927C16.5489 15.2446 16.9157 14.7535 17.1042 14.1899L20.1885 4.94305L20.1856 4.94024Z" fill="#FB8627" />
                                     </svg>
@@ -72,11 +73,12 @@ const Footer = ({FooterText}) => {
                             <div>Google customer reviews</div>
                         </div>
                     </div>
-                    <div className='text-center pt-5'>Chrome Button</div>
-
+                    <div className='flex justify-center pt-5'>
+                        <Button style={'border-[#613BC9]'}/>
+                    </div>
                 </div>
                 <div>
-                    <div className='p-4 md:rounded-3xl bg-gradient-to-b from-[#F3F0FC] to-[#5329C4]'>
+                    <div className='p-4 rounded-3xl bg-gradient-to-b from-[#F3F0FC] to-[#5329C4]'>
                         <div className='grid space-y-6 py-5 md:py-0 grid-cols-12'>
                             <div className='col-span-12 md:pl-20 md:col-span-6'>
                                 <Image src={'./dark_logo.svg'} alt='logo' width={200} height={200} />

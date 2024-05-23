@@ -177,7 +177,6 @@ body {
 .slider .slide-track {
   animation: scroll 20s linear infinite;
   display: flex;
-  align-items: center;
   width: calc(400px * 14);
 }
 
@@ -199,20 +198,16 @@ body {
 }
 
 .slider-back{
-  height: auto;
-  margin: auto;
   overflow: hidden;
   position: relative;
-  width: 100%;
   background-color: transparent;
 }
 
 .slider-back .slide-track-back {
   animation: scrollback 20s linear infinite;
   display: flex;
-  align-items: center;
   width: calc(400px * 14);
-}
+  }
 
 @media screen and(max-width: 600px) {
   .slider-back .slide-track-back {
