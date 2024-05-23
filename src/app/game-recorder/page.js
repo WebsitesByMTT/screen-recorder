@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import TypeFree from "@/components/TryFree";
 import WaysForRecording from "@/components/WaysForRecording";
@@ -50,6 +51,9 @@ const data = {
   },
 };
 
+const footerText='Connecting thousands of people worldwide'
+
+
 const GameRecorder = () => {
   return (
     <>
@@ -57,6 +61,7 @@ const GameRecorder = () => {
       <TypeFree data={data.typeFree} />
       <WaysForRecording data={data.WaysForRecording} />
       <OurUsers />
+      <Footer FooterText={footerText}/>
     </>
   );
 };
