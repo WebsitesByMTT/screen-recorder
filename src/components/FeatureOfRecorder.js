@@ -337,7 +337,7 @@ const FeatureOfRecorder = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <span>Add to Chrome its free</span></button>
+                                <span>Add to Chrome it&apos;s free</span></button>
                         </div>
 
                     </div>

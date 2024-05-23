@@ -18,7 +18,9 @@ const data = {
     button: "Try it now for free!",
     image: "/screen-recoder-img.png",
   },
-  WaysForRecording: [
+  WaysForRecording: {
+    heading: "Ways For Screen Recording",
+    text: [
     {
       title: "How To Record a Video with Better Quality",
       image: "/screen_recorder/waysimg1.svg",
@@ -59,6 +61,7 @@ const data = {
         mdcols: 'md:col-span-4',
     }
   ]
+  ]},
 };
 
 const page = () => {
@@ -68,6 +71,7 @@ const page = () => {
       <FreeScreenRecorder />
       <CaptureAnyThing />
       <OurUsers />
+      <FreeScreenRecorder />
       <WaysForRecording data={data.WaysForRecording} />
       <Blogs />
       <Faq faq={data.faq}/>
