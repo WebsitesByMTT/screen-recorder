@@ -12,8 +12,8 @@ const page = () => {
                 <Navbar />
                 <div className='pt-[30%] md:pt-[15%] mx-auto lg:pt-[10%] w-[89%] md:w-[70%]  space-y-4 pb-20'>
                     <div>
-                        <div className='text-start text-black pb-4 mx-auto text-[2.5rem]'>End User License Agreement and Terms of Service</div>
-                        <div className='text-black text-[1rem]   mx-auto'>Before installing free and secure screen recording on your browser, you need to agree to the terms of the end user license agreement. If you do not agree to it, then you can not use the software. All the images, icons, and text are owned by the free and secure screen recorder and are protected by copyright laws and international treaties.</div>
+                        <h6 className='text-start text-black pb-4 mx-auto text-[2.5rem]'>End User License Agreement and Terms of Service</h6>
+                        <p className='text-black text-[1rem]   mx-auto'>Before installing free and secure screen recording on your browser, you need to agree to the terms of the end user license agreement. If you do not agree to it, then you can not use the software. All the images, icons, and text are owned by the free and secure screen recorder and are protected by copyright laws and international treaties.</p>
                     </div>
                     <div >
                         <div className='text-start text-black  pb-4 mx-auto text-[2.5rem]'>License grant</div>

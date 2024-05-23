@@ -18,7 +18,7 @@ const RecordingSteps = ({data,heading}) => {
                                     {item.icon}
                                     <div className='text-[1.4rem]'>{item.steps}</div>
                                 </div>
-                                <div className='text-[1.2rem] pt-2 md:pt-0 text-center md:text-start w-[100%] md:w-[75%]'>{item.text}</div>
+                                <p className='text-[1.2rem] pt-2 md:pt-0 text-center md:text-start w-[100%] md:w-[75%]'>{item.text}</p>
                             </div>
                         </div>
                         {/* Check if the index is even to set the order */}

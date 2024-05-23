@@ -72,12 +72,12 @@ const FreeScreenRecorder = () => {
                         height={100}
                       />
                     </div>
-                    <div className="text-[1rem] text-center text-black">
+                    <h6 className="text-[1rem] text-center text-black">
                       {item.title}
-                    </div>
-                    <div className="text-black text-center text-[.9rem] pt-3">
+                    </h6>
+                    <p className="text-black text-center text-[.9rem] pt-3">
                       {item.para}
-                    </div>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -98,12 +98,12 @@ const FreeScreenRecorder = () => {
                         height={100}
                       />
                     </div>
-                    <div className="text-[1rem] text-center text-black">
+                    <h6 className="text-[1rem] text-center text-black">
                       {item.title}
-                    </div>
-                    <div className="text-black text-center text-[.9rem] pt-3">
+                    </h6>
+                    <p className="text-black text-center text-[.9rem] pt-3">
                       {item.para}
-                    </div>
+                    </p>
                   </div>
                 </div>
               </div>

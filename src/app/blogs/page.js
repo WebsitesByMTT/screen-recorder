@@ -61,8 +61,8 @@ const page = () => {
                             <div className='flex justify-center pb-6'>
                                 <span className='inline-block w-[60%] h-[5px] bg-[#B6A4E6]'></span>
                             </div>
-                            <div className='text-[1.8rem] text-[#230346]'>{item.title}</div>
-                            <div className='text-[#230346] text-[1rem] pt-3'>{item.para}</div>
+                            <h6 className='text-[1.8rem] text-[#230346]'>{item.title}</h6>
+                            <p className='text-[#230346] text-[1rem] pt-3'>{item.para}</p>
                         </div>
                     ))
                 }

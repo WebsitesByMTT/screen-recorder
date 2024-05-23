@@ -36,8 +36,8 @@ const OurUsers = ({data}) => {
                                     data?.map((item, ind) => (
                                         <CarouselItem key={ind}>
                                             <div>
-                                                <div className='text-white text-[1.5rem] md:text-[2rem]'>{item.heading}</div>
-                                                <div className='text-white text-[.9rem] md:text-[1.1rem] pt-2'>{item.para}</div>
+                                                <h6 className='text-white text-[1.5rem] md:text-[2rem]'>{item.heading}</h6>
+                                                <p className='text-white text-[.9rem] md:text-[1.1rem] pt-2'>{item.para}</p>
                                             </div>
                                         </CarouselItem>
                                     ))
