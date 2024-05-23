@@ -34,8 +34,8 @@ const Counts = () => {
                             <div key={ind} className='col-span-12 lg:col-span-4'>
 
                                 <div className='relative pt-[50px]'>
-                                    <Image src={item.image1} width={1000} height={1000} className='absolute w-[150px] left-[50%] translate-x-[-50%] top-0 mx-auto' />
-                                    <Image src={item.image2} width={100} height={100} className='absolute w-[150px] left-[50%] translate-x-[-50%] top-0 mx-auto' />
+                                    <Image src={item.image1} width={1000} height={1000} className='absolute w-[150px] left-[50%] translate-x-[-50%] top-0 mx-auto' alt=""/>
+                                    <Image src={item.image2} width={100} height={100} className='absolute w-[150px] left-[50%] translate-x-[-50%] top-0 mx-auto' alt=""/>
                                     <div className=''>
                                         <div className='text-[3.5rem] leading-[3rem] text-[#230346] text-center font-semibold'>{item.text1}</div>
                                         <div className='text-black text-[.9rem] text-center '>{item.text2}</div>

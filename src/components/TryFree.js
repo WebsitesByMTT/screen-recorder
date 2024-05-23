@@ -1,20 +1,17 @@
 import React from "react";
 
-const TryFree = () => {
+const TryFree = ({data}) => {
   return (
-    <div className="px-5 py-5 lg:py-10 lg:px-14 ">
-      <div className="bg-[#F0EBFA] py-[12vh] px-[5vw] md:px-[10vw] flex flex-col gap-7">
+    <div className="px-5 py-5 lg:py-10 lg:px-14">
+      <div className="bg-[#F0EBFA] py-[12vh] rounded-3xl px-[5vw] md:px-[10vw] flex flex-col gap-7">
         <h2 className=" text-3xl md:text-4xl lg:text-5xl text-center ">
-          Try this free webcam recorder and capture videos by using a webcam
+          {data.heading}
         </h2>
         <p className=" text-base text-center">
-          It is a top-notch software from which you can capture videos using
-          many devices, including USB webcams and camcorders. You can even
-          record a webcam with your audio and save or upload it on your personal
-          channel. You can set automatic stopping points and save them in
-          various formats like MP4, AVI, and WAV. Moreover, it ensures fast
-          recording speed, high-quality video, and efficient compression.
+          {data.text}
         </p>
+
+        <p className="m-auto text-xl p-5 py-3 text-white font-light capitalize bg-black w-fit rounded-[2rem] mt-5">{data.subtext}</p>
       </div>
     </div>
   );

@@ -290,7 +290,7 @@ const Button = () => {
             </clipPath>
           </defs>
         </svg>
-        <span className=" text-base">Add to Chrome it's Free</span>
+        <span className=" text-base">Add to Chrome it&apos;s Free</span>
       </button>
     </a>
   );
