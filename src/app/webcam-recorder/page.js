@@ -185,6 +185,25 @@ const data = {
 ]
 };
 
+export const metadata = {
+  title: "Free Webcam recorder allows you to record external video.",
+  description: "Free Webcam recorder extension can record any external video in super high quality. Download the extension now and record a video in super high quality. ",
+  icons: {
+    icon: '/favicon.png',
+  },
+  keywords: "Free and Secure screen recorder, best recording software, online video recorder, screen record with audio, free screen recording software, screen recording on Chrome, game recording software, Real-time Draw Tool, Real-Time Blur Display, Download 4K UHD Video Quality, Webcam Recorder, free screen recorder, free screen recorder Chrome, how to screen record on Chrome, screen recorder free download, Chrome screen recorder with audio, free Game recording software, best game recording software, how to Game record on Chrome, Game screen recorder free download, record gameplay with audio, record gameplay, Free Webcam Recorder, webcam recording software, free webcam recording software, online video recorder, Capture HD Quality Video",
+  openGraph: {
+    title: "Free Webcam recorder allows you to record external video.",
+    description: "Free Webcam recorder extension can record any external video in super high quality. Download the extension now and record a video in super high quality.",
+    type: 'website',
+    siteName: "Screen Recorder",
+    images: "/favicon.png",
+  },
+  alternates: {
+    canonical: "/",
+  },
+};
+
 const WebcamRecorder = () => {
   return (
     <>
