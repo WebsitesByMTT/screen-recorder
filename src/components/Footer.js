@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({FooterText}) => {
     const renderStars = [1, 2, 3, 4, 5]
     const data = [
         {
@@ -54,7 +54,7 @@ const Footer = () => {
         <div className='bg-white '>
             <div>
                 <div className='py-14'>
-                    <div className='text-[2rem] md:text-[3rem] text-[#1D1D1D]  mx-auto md:w-[50%] text-center font-normal'>50K people use our screen recording software</div>
+                    <div className='text-[2rem] md:text-[3rem] text-[#1D1D1D]  mx-auto lg:w-[60%] text-center font-normal '>{FooterText?FooterText:'Over 50K people use our screen recording software.'}</div>
                     <div className='w-full'>
                         <div className='flex items-center space-x-1 justify-center pt-5'>
                             {
@@ -84,11 +84,11 @@ const Footer = () => {
                             </div>
                             <div className='col-span-12 md:col-span-2'>
                                 <div className='text-black text-[1.6rem]'>Solutions</div>
-                                <div className='space-y-4 pt-2'>
+                                <div>
                                     {
                                         data.map((item) => (
                                             item.solution.map((subitem, ind) => (
-                                                <Link  key={ind} href={subitem.Link}>
+                                                <Link className='mt-2 block' key={ind} href={subitem.Link}>
                                                     <div>{subitem.text}</div>
                                                 </Link>
                                             ))
@@ -103,7 +103,7 @@ const Footer = () => {
                                     {
                                         data.map((item) => (
                                             item.resources.map((subitem, ind) => (
-                                                <Link key={ind} href={subitem.Link}>
+                                                <Link className='mt-2 block' key={ind} href={subitem.Link}>
                                                     <div>{subitem.text}</div>
                                                 </Link>
                                             ))
@@ -118,7 +118,7 @@ const Footer = () => {
                                     {
                                         data.map((item) => (
                                             item.Company.map((subitem, ind) => (
-                                                <Link key={ind} href={subitem.Link}>
+                                                <Link className='mt-2 block' key={ind} href={subitem.Link}>
                                                     <div>{subitem.text}</div>
                                                 </Link>
                                             ))

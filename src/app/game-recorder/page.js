@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import React from "react";
 
@@ -10,10 +11,14 @@ const data = {
   image: "/game-recorder-img.png",
 };
 
+const footerText='Connecting thousands of people worldwide'
+
+
 const GameRecorder = () => {
   return (
     <>
       <Hero type="" data={data} />
+      <Footer FooterText={footerText}/>
     </>
   );
 };

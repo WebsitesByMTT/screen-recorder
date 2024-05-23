@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +14,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="bg-white px-5 md:px-10 py-4 md:py-8">
           {children}
-          <Footer />
         </div>
       </body>
     </html>
