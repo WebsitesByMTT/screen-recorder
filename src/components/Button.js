@@ -1,9 +1,9 @@
 const Button = ({style}) => {
   return (
-    <a href="https://chromewebstore.google.com/detail/screen-recorder/hnpejnkkepgblnblidhfklgclddbnoaa">
-      <button className={`group flex items-center gap-4 px-6 py-4 ${style?style:'border-white'} border-[1px]  rounded-[3rem]`}>
+    <a className="navbar_btn" href="https://chromewebstore.google.com/detail/screen-recorder/hnpejnkkepgblnblidhfklgclddbnoaa">
+      <button className={`group btn flex items-center gap-4  px-6 py-4 ${style?style:'border-white'} border-[1px]  rounded-[3rem]`}>
         <svg
-          className="transition-transform duration-300 transform origin-center group-hover:rotate-45"
+          className="transition-transform duration-300 transform origin-center rounded-full group-hover:rotate-45"
           height="31"
           width="30"
           viewBox="0 0 30 31"
@@ -290,7 +290,7 @@ const Button = ({style}) => {
             </clipPath>
           </defs>
         </svg>
-        <span className=" text-base">Download For Free</span>
+        <span className=" text-base">Add to Chrome it&apos;s free</span>
       </button>
     </a>
   );
