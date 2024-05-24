@@ -3,7 +3,7 @@ import React from "react";
 
 const WaysForRecording = ({ data }) => {
   return (
-    <div className="bg-white px-5 py-5 lg:py-10 lg:px-14 ">
+    <div className="bg-white py-5 lg:py-10 lg:px-14 ">
       <div className="">
         <h2 className="text-center text-black text-[2rem] md:text-[3rem] md:pb-10">
           {data.heading}

@@ -23,15 +23,15 @@ const data = {
     text: [
     {
       title: "How To Record a Video with Better Quality",
-      image: "/screen_recorder/waysimg1.svg",
+      image: "/screen_recorder/waysimg1.png",
     },
     {
       title: "How to record a Zoom Meeting",
-      image: "/screen_recorder/waysimg2.svg",
+      image: "/screen_recorder/waysimg2.png",
     },
     {
       title: "Use your phone as a webcam on a PC and Record",
-      image: "/screen_recorder/waysimg3.svg",
+      image: "/screen_recorder/waysimg3.png",
     },
   ],
 },

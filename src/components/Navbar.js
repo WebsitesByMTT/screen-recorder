@@ -51,9 +51,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        {isOpen && (
-          <div className=" backdrop-blur-lg absolute left-0 top-0 w-full h-[50vh] p-4 flex items-center justify-center rounded-b-3xl lg:hidden">
-            <ul className="  flex items-center flex-col justify-center gap-4">
+          <div className={`backdrop-blur-[5px] absolute left-0 top-0 w-full ${isOpen?'h-[50vh] transition-all  p-4':'h-[0vh] transition-all'}  flex items-center justify-center rounded-b-3xl lg:hidden`}>
+            {isOpen&&<ul className="  flex items-center flex-col justify-center gap-4">
               <li className=" text-white text-base cursor-pointer">Features</li>
               <li className=" text-white text-base cursor-pointer">Blog</li>
               <li>
@@ -91,9 +90,8 @@ const Navbar = () => {
                   </span>
                 </button>
               </li>
-            </ul>
+            </ul>}
           </div>
-        )}
       </div>
     </>
   );

@@ -32,18 +32,18 @@ const GraphicsFeature = () => {
   
   return (
     <div className='bg-white pb-10 md:pb-20'>
-      <div className='grid grid-cols-12 space-y-5 md:space-y-0 md:gap-10  mx-auto'>
+      <div className='grid grid-cols-12 space-y-5 w-[85%] md:space-y-0 md:gap-10  mx-auto'>
         {
           data.map((item, ind) => (
-            <div key={ind} className='col-span-12 md:col-span-6'>
-              <div className={`rounded-tl-3xl rounded-tr-3xl`} style={{background:item.gradient }}>
+            <div key={ind} className='col-span-12 overflow-hidden rounded-3xl md:col-span-6'>
+              <div  style={{background:item.gradient }}>
                 <div className='pl-6 md:pl-12 pt-10 text-white'>
                   <div className='text-[1.5rem] md:text-[2rem]'>{item.title}</div>
                   <div className='pt-3 text-[.9rem] w-[95%] md:w-[70%]'>{item.para} </div>
                 </div>
               </div>
               <div className='relative'>
-                <Image src={item.image} alt='img' height={100} width={100} className='w-full h-full' />
+                <Image src={item.image} alt='img' height={100} width={100} className='w-full  -translate-y-1 h-full' />
                 {ind===0&&<Image src={'/hero/audio_icon.svg'} alt='img' height={100} width={100} className='absolute top-[20%] w-[15%] md:w-[15%] right-[20%]' />}
               </div>
             </div>

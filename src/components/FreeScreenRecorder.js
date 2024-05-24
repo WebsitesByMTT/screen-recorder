@@ -63,7 +63,7 @@ const FreeScreenRecorder = () => {
             {duplicatedItems.map((item, index) => (
               <div key={index} className="slide">
                 <div className="bg-gradient-to-t rounded-3xl p-[1px] from-[#5329C4] to-[#B6A4E6] col-span-12 md:col-span-4">
-                  <div className="bg-white w-[350px px-2 md:px-4 pt-2 pb-4 rounded-3xl">
+                  <div className="bg-white w-[350px] h-[230px] px-2 md:px-4 pt-2 pb-4 rounded-3xl">
                     <div className="flex justify-center">
                       <Image
                         src={item.icon}
@@ -89,7 +89,7 @@ const FreeScreenRecorder = () => {
             {duplicatedItems.map((item, index) => (
               <div key={index} className="slide">
                 <div className="bg-gradient-to-t rounded-3xl p-[1px] from-[#5329C4] to-[#B6A4E6] col-span-12 md:col-span-4">
-                  <div className="bg-white w-[350px px-2 md:px-4 pt-2 pb-4 rounded-3xl">
+                  <div className="bg-white w-[350px] h-[230px] px-2 md:px-4 pt-2 pb-4 rounded-3xl">
                     <div className="flex  justify-center">
                       <Image
                         src={item.icon}

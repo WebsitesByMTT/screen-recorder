@@ -81,7 +81,7 @@ const Footer = ({ FooterText }) => {
                     <div className='p-4 rounded-3xl bg-gradient-to-b from-[#F3F0FC] to-[#5329C4]'>
                         <div className='grid space-y-6 py-5 md:py-0 grid-cols-12'>
                             <a href='/' className='col-span-12 md:pl-20 md:col-span-6'>
-                                <Image src={'./dark_logo.svg'} alt='logo' width={200} height={200} />
+                                <Image src={'/dark_logo.svg'} alt='logo' width={200} height={200} />
                                 <div className='text-[#3D2755] text-[.9rem] pt-5'>Copyright © 2024 Screen Recorder . All rights reserved.</div>
                             </a>
                             <div className='col-span-12 md:col-span-2'>
