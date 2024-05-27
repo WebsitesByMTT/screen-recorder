@@ -26,7 +26,7 @@ const Counts = () => {
         }
     ]
     return (
-        <div className='bg-white  py-12  md:py-20'>
+        <div className='bg-white  pb-12  md:py-20'>
             <div>
                 <div className='grid grid-cols-12 space-y-12 lg:space-y-0 items-center w-full'>
                     {

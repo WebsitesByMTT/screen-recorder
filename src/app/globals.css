@@ -15,6 +15,7 @@ body {
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   background-color: #230346;
+  z-index: 9999 !important;
 
   border-radius: 50%;
   position: relative;
@@ -25,6 +26,7 @@ body {
     font-size: 1.5rem /* 24px */;
     line-height: 2rem /* 32px */;
     white-space: nowrap;
+    z-index: 9999 !important;
   }
 
   svg {
@@ -32,79 +34,19 @@ body {
     height: 60px;
     min-width: 60px;
     min-height: 60px;
-    fill: #b6a4e6;
   }
 
   .title {
-    /* display: none; */
     transition: all 0.2s ease-in-out;
   }
+}
 
-  &:hover {
+.showonhover{
     width: 18rem;
     justify-content: flex-start;
     border-radius: 0;
     border-radius: 20rem;
     background-color: #b6a4e6;
-
-    .title {
-      display: block;
-    }
-
-    svg {
-      fill: #230346;
-    }
-  }
-}
-
-:root {
-  --card-height: auto;
-  --card-top-offset: 1em;
-  --numcards: 4;
-  --outline-width: 0px;
-}
-
-#cards {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(var(--numcards), var(--card-height));
-  gap: var(--card-margin);
-  padding-bottom: calc(var(--numcards) * var(--card-top-offset));
-  margin-bottom: var(--card-margin);
-}
-
-.card {
-  position: sticky;
-  top: 20%;
-}
-
-/* Animation */
-@supports (animation-timeline: works) {
-
-  @scroll-timeline cards-element-scrolls-in-body {
-    source: selector(body);
-    scroll-offsets:
-      selector(#cards) start 1,
-      selector(#cards) start 0;
-    start: selector(#cards) start 1;
-    end: selector(#cards) start 0;
-    time-range: 4s;
-  }
-
-  .card {
-    --index0: calc(var(--index) - 1);
-    --reverse-index: calc(var(--numcards) - var(--index0));
-    --reverse-index0: calc(var(--reverse-index) - 1);
-     animation: scale 4s linear both;
-    animation-timeline: cards-element-scrolls-in-body;
-  }
-
-  @keyframes scale {
-    to {
-      transform: scale(0.6);
-    }
-  }
 }
 
 
@@ -238,6 +180,31 @@ body {
     width: calc(10% * 14);
   }
 }
+
+
+.cards {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  perspective: 600px;
+  width: 100%;
+  color: #fff;
+  border-radius:.9rem;
+  position: sticky;
+  top: 80px;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+}
+
+
+
+
+
+
 
 
 

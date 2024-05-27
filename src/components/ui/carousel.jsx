@@ -27,6 +27,7 @@ const Carousel = React.forwardRef(
       plugins,
       className,
       children,
+      getCurrentIndex,
       ...props
     },
     ref
@@ -46,9 +47,14 @@ const Carousel = React.forwardRef(
         return;
       }
 
+      const selectedIndex = api.selectedScrollSnap();
       setCanScrollPrev(api.canScrollPrev());
       setCanScrollNext(api.canScrollNext());
-    }, []);
+
+      if(getCurrentIndex){
+         getCurrentIndex(selectedIndex)
+      }
+    }, [getCurrentIndex]);
 
     const scrollPrev = React.useCallback(() => {
       api?.scrollPrev();
