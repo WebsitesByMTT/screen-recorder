@@ -1,6 +1,6 @@
 const Button = ({style}) => {
   return (
-    <a className="navbar_btn" href="https://chromewebstore.google.com/detail/screen-recorder/hnpejnkkepgblnblidhfklgclddbnoaa">
+    <a target="_blank" className="navbar_btn" href="https://chromewebstore.google.com/detail/screen-recorder/hnpejnkkepgblnblidhfklgclddbnoaa">
       <button className={`group btn flex items-center gap-4  px-6 py-4 ${style?style:'border-white'} border-[1px]  rounded-[3rem]`}>
         <svg
           className="transition-transform duration-300 transform origin-center rounded-full group-hover:rotate-45"
