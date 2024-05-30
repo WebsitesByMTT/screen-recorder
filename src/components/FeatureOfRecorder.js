@@ -70,18 +70,20 @@ const FeatureOfRecorder = () => {
       }
       
       
-      useEffect(() => {
-        function stackedCards(cardClassName) {
-            const cards = document.querySelectorAll(cardClassName);
+      function stackedCards(cardClassName) {
+        const cards = document.querySelectorAll(cardClassName);
+        if(cards.length>0){
             for (let index = 0; index < cards.length - 1; index++) {
                 CreateCardsScene(cards[index]);
             }
+        }else{
+            window.location.reload()
         }
-
-        // Assuming you want to call stackedCards with '.card' as the argument
+        }
+       
+      useEffect(() => {
         stackedCards('.card');
-    },[]); //
-
+      },[]); //
     
     return (
         <div className='bg-white pb-20'>
