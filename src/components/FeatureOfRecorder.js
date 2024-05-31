@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 import { gsap } from "gsap";
-import { ScrollScene} from 'scrollscene';
+import { ScrollScene } from 'scrollscene';
 
 const FeatureOfRecorder = () => {
 
@@ -29,75 +29,76 @@ const FeatureOfRecorder = () => {
         }
     ]
 
-   
+
     gsap.registerEffect({
         name: "scaleDown",
         effect: (targets, config) => {
-          return gsap.to(targets, {
-            ease: config.ease,
-            scale: .7,
-            y: -1,
-          });
+            return gsap.to(targets, {
+                ease: config.ease,
+                scale: .9,
+                y: 0,
+            });
         },
         defaults: {
-          ease: 'power1.out'
+            ease: 'power1.out'
         },
         extendTimeline: true
-      });
-      
-      
-      // Creating a card scene
-      // --------------------------------
-      function CreateCardsScene(el) {  
+    });
+
+
+    // Creating a card scene
+    // --------------------------------
+    function CreateCardsScene(el) {
         return new ScrollScene({
-          triggerElement: el.nextElementSibling,
-          triggerHook: .5,
-          gsap: {
-            timeline: stackedCardsTl(el),
-          },
-          duration: '100%',
+            triggerElement: el.nextElementSibling,
+            triggerHook: .5,
+            gsap: {
+                timeline: stackedCardsTl(el),
+            },
+            duration: '100%',
         })
-      }
-      
-      // Scale down timeLine
-      // --------------------------------
-      function stackedCardsTl(el) {
+    }
+
+    // Scale down timeLine
+    // --------------------------------
+    function stackedCardsTl(el) {
         const timeline = gsap.timeline({ paused: true });
         timeline
-          .addLabel('in')
-          .scaleDown(el)
+            .addLabel('in')
+            .scaleDown(el)
         return timeline;
-      }
-      
-      
-      useEffect(() => {
-        function stackedCards(cardClassName) {
-            const cards = document.querySelectorAll(cardClassName);
-            for (let index = 0; index < cards.length - 1; index++) {
-                CreateCardsScene(cards[index]);
-            }
+    }
+
+
+    function stackedCards(cardClassName) {
+        const cards = document.querySelectorAll(cardClassName);
+        for (let index = 0; index < cards.length - 1; index++) {
+            CreateCardsScene(cards[index]);
         }
-
-        // Assuming you want to call stackedCards with '.card' as the argument
+    }
+    useEffect(() => {
         stackedCards('.card');
-    },[]); //
+    }, []); //
 
-    
     return (
         <div className='bg-white pb-20'>
             <div>
                 <div>
-                    <ul className="cards">
+                    <ul className='relative'>
                         <div className='text-[1.5rem] sticky top-[2%] text-center md:text-[3rem]'>Features Of Free And Secure Screen <br className='md:block hidden' /> Recorder</div>
 
                         {
                             data.map((item, ind) => (
-                                <li key={ind} class="relative card bg-gradient-to-t rounded-[2rem]  from-[#5F38C8] to-[#F3F0FC]  w-full h-auto md:w-[60%] mx-auto" className={`card-${ind +1}`}>
-                                    <Image src="/hero/feature_line.svg" alt='img' height={100} width={100} className='absolute w-auto right-0 max-w-none top-0 h-full' />
-                                    <div className='py-20 pl-5 md:pl-10 text-white'>
-                                        <h6 className='text-[1.7rem] md:text-[2.5rem] md:w-[70%]'>{item.heading}</h6>
-                                        <p className='pt-5 w-full md:w-[60%]'>{item.para}</p>
+                                <li key={ind} className="card bg-gradient-to-t rounded-[2rem]  from-[#5F38C8] to-[#F3F0FC]  w-full h-auto md:w-[60%] mx-auto" >
+
+                                    <div className={`card-${ind + 1}`}>
+                                        <Image src="/hero/feature_line.svg" alt='img' height={100} width={100} className='absolute w-auto right-0 max-w-none top-0 h-full' />
+                                        <div className='py-20 pl-5 md:pl-10 text-white'>
+                                            <h6 className='text-[1.7rem] md:text-[2.5rem] md:w-[70%]'>{item.heading}</h6>
+                                            <p className='pt-5 w-full md:w-[60%]'>{item.para}</p>
+                                        </div>
                                     </div>
+
                                 </li>
                             ))
                         }
