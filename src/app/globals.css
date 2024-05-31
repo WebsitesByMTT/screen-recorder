@@ -182,12 +182,7 @@ body {
 }
 
 
-.cards {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .card {
   perspective: 600px;
