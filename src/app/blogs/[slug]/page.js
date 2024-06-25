@@ -50,7 +50,7 @@ const page = async ({ params }) => {
                   <div className='text-black text-[2rem]'>Published on</div>
                   <div className='text-[.9rem] text-black '>{data?.publishDate}</div>
                   {data?.content.length > 0 && (
-                     <div className='py-8 space-y-4'>
+                     <div className='py-4 space-y-4'>
                         {data?.content?.map((item, index) => (
                            <div key={index}>
                               {item.heading && <h1 className='md:text-[3rem] text-[2rem]'>{item.heading}</h1>}

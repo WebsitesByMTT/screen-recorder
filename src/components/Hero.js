@@ -7,6 +7,7 @@ import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import Image from "next/image";
 
 const Hero = ({ type, homeData, data }) => {
+    const [readmore,setReadmore]=useState(false)
     const [currentIndex, setCurrentIndex] = useState(0);
     const handelCurrentIndex = (crruentindex) => {
         setCurrentIndex(crruentindex)
@@ -396,6 +397,8 @@ const Hero = ({ type, homeData, data }) => {
         );
     }
 
+    
+
     return (
         <div
             className="rounded-tl-3xl rounded-tr-3xl bg-custom-gradient lg:h-screen overflow-hidden relative"
@@ -405,25 +408,34 @@ const Hero = ({ type, homeData, data }) => {
             }}
         >
             <Navbar />
-            <div className=" h-full relative mt-32 grid grid-cols-1 md:grid-cols-2 p-5 lg:px-14 gap-6">
+            <div className=" h-full relative mt-32 md:mt-3 grid grid-cols-1 md:grid-cols-2 p-5 lg:px-14 gap-6">
                 <div className="flex flex-col gap-4 items-center md:items-start justify-center ">
                     <h1 className=" text-5xl md:text-6xl text-center md:text-left">
                         {data?.title}
                     </h1>
                     {data?.desc &&
                         data?.desc.map((item, idx) => (
+                            type==="feature"?
                             <p
-                                className=" text-base line-clamp-2 text-center md:text-left"
+                                className=" text-base text-center md:text-left"
                                 key={idx}
                             >
-                                {item}
-                            </p>
+                                {readmore?item:item.substring(0,213)}...<span onClick={()=>setReadmore(!readmore)} className={`pl-1 text-[1rem] ${readmore?'text-[#4723A7]':'text-[#4723A7]'} cursor-pointer`}>{readmore?'Read less':'Read More'}</span>
+                                
+                            </p>:
+                             <p
+                             className=" text-base text-center md:text-left"
+                             key={idx}
+                         >
+                             {item}
+                         </p>
+                            
                         ))}
 
                     {data?.button && (
-                        <button className=" py-3 px-8 bg-black rounded-[59px] text-white text-center md:text-left">
+                        <a target="blank" href="https://chromewebstore.google.com/detail/screen-recorder/hnpejnkkepgblnblidhfklgclddbnoaa" className=" py-3 px-8 bg-black rounded-[59px] text-white text-center md:text-left">
                             {data?.button}
-                        </button>
+                        </a>
                     )}
                 </div>
                 <div className="flex items-center justify-center ">
