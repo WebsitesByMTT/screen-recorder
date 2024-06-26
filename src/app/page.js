@@ -9,6 +9,7 @@ import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 
+
 const data = [
   {
     id: 1,
@@ -195,7 +196,7 @@ export default function Home() {
       <BestScreen />
       <GraphicsFeature />
       <RecordingSteps data={RecordingStepsdata.data} heading={RecordingStepsdata.heading} />
-      <Blogs />
+      <Blogs/>
       <Faq faq={faq} />
       <Footer />
     </main>

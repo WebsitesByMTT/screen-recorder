@@ -12,7 +12,7 @@ const data = {
   hero: {
     title: "Record Live Gameplay With This Free Game Recording Software",
     desc: [
-      "It is an advanced game recorder that is suitable for capturing the most demanding gameplay in 4K UHD resolution up to 480 frames per second. You can also record live gameplay along with your original audio and share it with your friends by uploading it on your YouTube channel.",
+      "<span>It is an <a href='' >advanced game recorder</a> that is suitable for capturing the most demanding gameplay in 4K UHD resolution up to 480 frames per second. You can also record live gameplay along with your original audio and share it with your friends by uploading it on your YouTube channel.</span>",
     ],
     button: "",
     image: "/game-recorder-img.png",
@@ -42,7 +42,7 @@ const data = {
       },
       {
         title: "Capture live player with a webcam",
-        desc: "You can record gameplay with your favorite player's live face and audio by using a webcam and a microphone. You can also blur the background with the chroma key feature and save it.",
+        desc: "<span>You can record gameplay with your favorite player's live face and audio by <a href='/webcam-recorder' >using a webcam</a> and a microphone. You can also blur the background with the chroma key feature and save it.</span>",
         image: "/game_recorder/way4.png",
       },
       {

@@ -34,7 +34,7 @@ const page = () => {
                 <div className='pt-[30%] w-[89%] md:w-[70%] mx-auto md:pt-[15%] lg:pt-[10%] pb-20'>
                     <div>
                         <div className='text-start text-black  pb-4 mx-auto text-[2.5rem]'>Privacy Policy</div>
-                        <div className='text-black text-[1rem]  mx-auto'>We highly respect your privacy rights. You can search for any information related to our website without sharing your personal information. There we have mentioned everything including which type of information we collect and how we utilize your personal details in such situations. Remember that we change our privacy policy from time to time. So, it will be best if you keep track of it.</div>
+                        <div className='text-black text-[1rem]  mx-auto'>We highly respect your privacy rights. You can search for any information related to our website <a className='text-blue-100' href='/'>(Recordbro)</a> without sharing your personal information. There we have mentioned everything including which type of information we collect and how we utilize your personal details in such situations. Remember that we change our privacy policy from time to time. So, it will be best if you keep track of it.</div>
                     </div>
                     <div className='py-5'>
                         <div className='text-start text-black pb-4 mx-auto text-[2.5rem]'>Cookies</div>
