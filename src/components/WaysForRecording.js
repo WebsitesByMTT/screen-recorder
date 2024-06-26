@@ -25,7 +25,7 @@ const WaysForRecording = ({ data }) => {
               >
                 {item.title}
               </h3>
-              <p>{item.desc}</p>
+              <p dangerouslySetInnerHTML={{__html:item?.desc}}></p>
             </div>
             <div
               className={`${

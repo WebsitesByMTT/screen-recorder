@@ -11,7 +11,7 @@ const data = {
   hero: {
     title: "Record With Webcam For Free",
     desc: [
-      "This free Webcam recorder allows you to capture your video by using a webcam in top-notch quality. You can even picture yourself with this extension.",
+      "<span>This <a href=''>free Webcam recorder</a> allows you to capture your video by using a webcam in top-notch quality. You can even picture yourself with this extension.</span>",
       "So what are you waiting for?",
     ],
     button: "Try this Extension for free!",
