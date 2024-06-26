@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import Navbar from "./Navbar";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -7,7 +7,7 @@ import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import Image from "next/image";
 
 const Hero = ({ type, homeData, data }) => {
-    const [readmore,setReadmore]=useState(false)
+    const [readmore, setReadmore] = useState(false)
     const [currentIndex, setCurrentIndex] = useState(0);
     const handelCurrentIndex = (crruentindex) => {
         setCurrentIndex(crruentindex)
@@ -34,7 +34,7 @@ const Hero = ({ type, homeData, data }) => {
                                         "linear-gradient(180deg, #010314 0.11%, #5329C4 27.92%, #FFF 55.73%)",
                                 }}
                             >
-                                 <div
+                                <div
                                     className={`${currentIndex === 1 && 'showonhover'} z-50 icon absolute top-[0%] right-[80%] `}
                                 >
                                     <svg
@@ -151,7 +151,7 @@ const Hero = ({ type, homeData, data }) => {
                                 style={{
                                     background:
                                         "linear-gradient(180deg, #010314 0.11%, #5329C4 27.92%, #FFF 55.73%)",
-                            }}
+                                }}
                             >
                                 <div className=" w-20 h-20 flex items-center justify-center rounded-[50%] bg-[#230346] absolute bottom-[54%] -left-[%]">
                                     <svg
@@ -325,7 +325,7 @@ const Hero = ({ type, homeData, data }) => {
                                     </svg>
                                     <span className="title">Record webcam</span>
                                 </div>
-                                
+
                             </div>
 
                             {/* Top outer circle  */}
@@ -336,7 +336,7 @@ const Hero = ({ type, homeData, data }) => {
                                         "linear-gradient(180deg, #010314 0.11%, #5329C4 27.92%, #FFF 55.73%)",
                                 }}
                             >
-                               
+
                                 <div className=" w-20 h-20 hidden md:flex items-center justify-center rounded-[50%] bg-[#230346] absolute -top-[1%] left-[35%] ">
                                     <svg
                                         width="48"
@@ -397,8 +397,6 @@ const Hero = ({ type, homeData, data }) => {
         );
     }
 
-    
-
     return (
         <div
             className="rounded-tl-3xl rounded-tr-3xl bg-custom-gradient lg:h-screen overflow-hidden relative"
@@ -415,21 +413,37 @@ const Hero = ({ type, homeData, data }) => {
                     </h1>
                     {data?.desc &&
                         data?.desc.map((item, idx) => (
-                            type==="feature"?
-                            <p
-                                className=" text-base text-center md:text-left"
-                                key={idx}
-                            >
-                                {readmore?item:item.substring(0,213)}...<span onClick={()=>setReadmore(!readmore)} className={`pl-1 text-[1rem] ${readmore?'text-[#4723A7]':'text-[#4723A7]'} cursor-pointer`}>{readmore?'Read less':'Read More'}</span>
-                                
-                            </p>:
-                             <p
-                             className=" text-base text-center md:text-left"
-                             key={idx}
-                         >
-                             {item}
-                         </p>
-                            
+                            type === "feature" ?
+                                <p className="text-base text-center md:text-left" key={idx}>
+                                    <span
+                                        dangerouslySetInnerHTML={{
+                                            __html:readmore ? item : item.substring(0, 213) + '...'
+                                        }}
+                                    />
+                                    {!readmore && item.length > 213 && (
+                                        <span
+                                            onClick={() => setReadmore(!readmore)}
+                                            className="pl-1 text-[1rem] text-[#4723A7] cursor-pointer"
+                                        >
+                                            Read More
+                                        </span>
+                                    )}
+                                    {readmore && (
+                                        <span
+                                            onClick={() => setReadmore(!readmore)}
+                                            className="pl-1 text-[1rem] text-[#4723A7] cursor-pointer"
+                                        >
+                                            Read Less
+                                        </span>
+                                    )}
+                                </p> :
+                                <p
+                                    className=" text-base text-center md:text-left"
+                                    key={idx}
+                                    dangerouslySetInnerHTML={{ __html: item }}
+                                >
+                                </p>
+
                         ))}
 
                     {data?.button && (

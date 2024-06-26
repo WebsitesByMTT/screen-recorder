@@ -45,7 +45,6 @@ const OurUsers = ({data}) => {
 
                             </CarouselContent>
                         </Carousel>
-
                     </div>
                 </div>
             </div>

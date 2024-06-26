@@ -12,7 +12,7 @@ const data = {
   hero: {
     title: "Capture Your Screen For Free",
     desc: [
-      "This free screen recorder Chrome is the best extension to use. It allows you to capture everything that you want on your browser. You can also draw anything while recording the video. After recording, you can download 4K UHD video quality. You can also edit your video and share it ahead. With this chrome screen recorder with audio, you can capture your original voice and give it a comprehensive narration to your recordings.",
+      "<span>This free <a href='' >screen recorder Chrome</a> is the best extension to use. It allows you to capture everything that you want on your browser. You can also draw anything while recording the video. After recording, you can download 4K UHD video quality. You can also edit your video and share it ahead. With this chrome screen recorder with audio, you can capture your original voice and give it a comprehensive narration to your recordings.</span>",
       "So what are you waiting for?",
     ],
     button: "Try it now for free!",
@@ -23,14 +23,17 @@ const data = {
     text: [
     {
       title: "How To Record a Video with Better Quality",
+      desc:'',
       image: "/screen_recorder/waysimg1.png",
     },
     {
       title: "How to record a Zoom Meeting",
+      desc:'',
       image: "/screen_recorder/waysimg2.png",
     },
     {
       title: "Use your phone as a webcam on a PC and Record",
+      desc:'',
       image: "/screen_recorder/waysimg3.png",
     },
   ],

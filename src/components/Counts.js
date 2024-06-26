@@ -7,21 +7,21 @@ const Counts = () => {
             id: 1,
             image1: '/hero/user.png',
             image2: '/hero/blur_color.png',
-            text1: '600K',
+            text1: '100K',
             text2: 'Active user',
         },
         {
             id: 2,
             image1: '/hero/screenshot.png',
             image2: '/hero/blur_color.png',
-            text1: '5M',
+            text1: '10K',
             text2: 'Screenshots',
         },
         {
             id: 3,
             image1: '/hero/screenrecording.png',
             image2: '/hero/blur_color.png',
-            text1: '8M',
+            text1: '90K',
             text2: 'Screen Recording',
         }
     ]
