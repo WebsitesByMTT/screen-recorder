@@ -6,7 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import Image from "next/image";
 
-const Hero = ({ type, homeData, data }) => {
+const Hero = ({ type, homeData, data ,style}) => {
     const [readmore, setReadmore] = useState(false)
     const [currentIndex, setCurrentIndex] = useState(0);
     const handelCurrentIndex = (crruentindex) => {
@@ -94,7 +94,7 @@ const Hero = ({ type, homeData, data }) => {
                                 </div>
                                 <Carousel
                                     opts={{
-                                        loop: true,
+                                        loop:true,
                                     }}
                                     plugins={[
                                         Autoplay({
@@ -115,7 +115,6 @@ const Hero = ({ type, homeData, data }) => {
                                                     />
                                                 </CarouselItem>
                                             )
-
                                         })}
                                     </CarouselContent>
                                 </Carousel>
@@ -408,19 +407,17 @@ const Hero = ({ type, homeData, data }) => {
             <Navbar />
             <div className=" h-full relative mt-32 md:mt-3 grid grid-cols-1 md:grid-cols-2 p-5 lg:px-14 gap-6">
                 <div className="flex flex-col gap-4 items-center md:items-start justify-center ">
-                    <h1 className=" text-5xl md:text-6xl text-center md:text-left">
-                        {data?.title}
-                    </h1>
+                    <h1 className={`${style} text-5xl md:text-6xl text-center md:text-left`} dangerouslySetInnerHTML={{__html:data?.title}}></h1>
                     {data?.desc &&
                         data?.desc.map((item, idx) => (
                             type === "feature" ?
-                                <p className="text-base text-center md:text-left" key={idx}>
+                                <p className="text-base  text-center md:text-left" key={idx}>
                                     <span
                                         dangerouslySetInnerHTML={{
-                                            __html:readmore ? item : item.substring(0, 213) + '...'
+                                            __html:readmore ? item : item?.substring(0, 213) + '...'
                                         }}
                                     />
-                                    {!readmore && item.length > 213 && (
+                                    {!readmore && item?.length > 213 && (
                                         <span
                                             onClick={() => setReadmore(!readmore)}
                                             className="pl-1 text-[1rem] text-[#4723A7] cursor-pointer"
@@ -447,7 +444,7 @@ const Hero = ({ type, homeData, data }) => {
                         ))}
 
                     {data?.button && (
-                        <a target="blank" href="https://chromewebstore.google.com/detail/screen-recorder/hnpejnkkepgblnblidhfklgclddbnoaa" className=" py-3 px-8 bg-black rounded-[59px] text-white text-center md:text-left">
+                        <a target="blank" href="https://chromewebstore.google.com/detail/screen-recorder/hnpejnkkepgblnblidhfklgclddbnoaa" className="md:mt-10 py-3 px-8 md:px-16 text-[1.1rem] md:text-[1.5rem] bg-[#230346] rounded-[59px] text-white text-center md:text-left">
                             {data?.button}
                         </a>
                     )}

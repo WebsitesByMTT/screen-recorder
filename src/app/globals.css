@@ -182,8 +182,6 @@ body {
 }
 
 
-
-
 .card {
   perspective: 600px;
   width: 100%;
@@ -195,6 +193,14 @@ body {
   overflow: hidden;
 }
 
+.fade-in {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
 
 
 
