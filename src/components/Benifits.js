@@ -48,7 +48,7 @@ const Benifits = () => {
             <div className='pb-5 md:pt-12'>
                 <div className='text-[2rem] font-normal md:text-[2.5rem] text-center'>Features of Free and Secure Recordbro</div>
                 <div className='space-y-5  py-5 text-black text-center'>
-                    <p className='md:w-[60%] mx-auto'>Introducing our cutting-edge screen recorder chrome extension software for recording videos, which is made to make the process easier while maintaining excellent quality. Recordbro offers a smooth and practical experience whether you're creating material for social networking, business presentations, or personal use.</p>
+                    <p className='md:w-[60%] mx-auto'>Introducing our cutting-edge screen recorder chrome extension software for recording videos, which is made to make the process easier while maintaining excellent quality. Recordbro offers a smooth and practical experience whether you&apos;re creating material for social networking, business presentations, or personal use.</p>
                     <p className='md:w-[60%] mx-auto'>Bid farewell to the era of silent videos and provide your audience with a comprehensive visual and audio experience using our screen recorder chrome extension that communicates volumes!</p>
                 </div>
             </div>
@@ -61,7 +61,7 @@ const Benifits = () => {
                                     }`}
                             >
                                 <div>
-                                    <Image src={item.image} width={2000} height={1500} className="w-[95%] h-full" quality={100} />
+                                    <Image src={item.image} alt='image' width={2000} height={1500} className="w-[95%] h-full" quality={100} />
                                 </div>
                                 <div className="space-y-4  pt-4 md:pt-8">
                                     <div className="text-black text-[2rem] md:text-[2.5rem]">{item.title}</div>
