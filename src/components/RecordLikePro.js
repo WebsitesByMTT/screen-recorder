@@ -14,12 +14,12 @@ const RecordLikePro = () => {
     return (
         <div className='pt-20 pb-12'>
             <div className='text-center text-[1.6rem]'>
-                <div className='w-full md:w-[75%] text-[2rem] font-normal md:text-[2.5rem] mx-auto'>Record Like a Pro: Elevate Your Content with Recordbro's Unmatched Screen Recording Excellence!</div>
+                <div className='w-full md:w-[75%] text-[2rem] font-normal md:text-[2.5rem] mx-auto'>Record Like a Pro: Elevate Your Content with Recordbro&apos;s Unmatched Screen Recording Excellence!</div>
             </div>
             <div className='grid grid-cols-1 w-[90%] space-y-10 md:space-y-0 md:w-[85%] pt-16 mx-auto md:gap-x-10 md:grid-cols-2'>
                 {
-                    data?.map((item) => (
-                        <div className='p-6 md:px-20  md:py-32 text-[1rem] md:text-[1.6rem] text-center rounded-3xl bg-gradient-to-b from-[#E1D6FF] to-[#FFFFFF]'>
+                    data?.map((item,ind) => (
+                        <div key={ind} className='p-6 md:px-20  md:py-32 text-[1rem] md:text-[1.6rem] text-center rounded-3xl bg-gradient-to-b from-[#E1D6FF] to-[#FFFFFF]'>
                             <p>{item.para}</p>
                         </div>
                     ))
