@@ -1,9 +1,13 @@
+import Benifits from '@/components/Benifits';
 import Faq from '@/components/Faq';
 import FeaturesOfScreenRecorder from '@/components/FeaturesOfScreenRecorder';
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero';
 import OurUsers from '@/components/OurUsers';
+import RecordLikePro from '@/components/RecordLikePro';
+import RecordYourScreen from '@/components/RecordYourScreen';
 import React from 'react'
+
 
 export const metadata = {
     title: "Unleash Your Creativity With The Best Screen Recording Software",
@@ -26,10 +30,10 @@ export const metadata = {
 const page = () => {
     const data = {
         hero: {
-          title: "Unleash Your Creativity With The Best Screen Recording Software ",
-          desc: ["Unleash your creative mind to the world using Recordbro, the best screen recording software for professionals and enthusiasts! Easily record high-quality videos with a few clicks. Recordbro is perfect for creating captivating instructional videos for your students or consumers, recording complex processes for your employees, or showing off your gaming skills on social media platforms. Use Recordbro, the best screen recorder Chrome extension, to show the world what makes you the best.",],
+          title: "<span class='leading-[1] inline-block pb-5'>Unleash Your Creativity With <br class='md:block hidden'/> The Best Screen Recording Software</span>",
+          desc: ["Unleash your creative mind to the world using Recordbro, the <a href=''>best screen recording software</a> for professionals and enthusiasts! Easily record high-quality videos with a few clicks. Recordbro is perfect for creating captivating instructional videos for your students or consumers, recording complex processes for your employees, or showing off your gaming skills on social media platforms. Use Recordbro, the best screen recorder Chrome extension, to show the world what makes you the best."],
           button: "Try this Extension for free!",
-          image: "/webcam-recorder-img.png",
+          image: "/features.png",
           type:'feature'
         },
         ourusers : [
@@ -87,8 +91,11 @@ const page = () => {
     }
     return (
         <>
-            <Hero type={data.hero.type} data={data.hero} />
+            <Hero style={'text-white'} type={data.hero.type} data={data.hero} />
             <FeaturesOfScreenRecorder/>
+            <RecordYourScreen />
+            <Benifits />
+            <RecordLikePro />
             <OurUsers data={data.ourusers}/>
             <Faq faq={data.faq}/>
             <Footer FooterText={data.footerText} />
